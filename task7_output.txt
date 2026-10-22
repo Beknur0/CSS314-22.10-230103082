@@ -1,0 +1,42 @@
+Student ID: 230103082
+OS: Windows 11
+CPU: Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+Logical CPU Cores: 12
+Available Numba Threads: 12
+
+Array Size: 30,000,000
+Data Type: float64
+Benchmark Repeats: 5
+Thread Counts: [1, 2, 12]
+Input Array Size: 240.00 MB
+Output Array Size: 240.00 MB
+
+===== KERNEL A: MEMORY-BOUND =====
+Cores     Wall Time (ms)      Speedup        Efficiency     
+------------------------------------------------------------
+1         34.431              1.000          1.000          
+2         17.471              1.971          0.985          
+12        13.856              2.485          0.207          
+
+===== KERNEL B: COMPUTE-BOUND =====
+Cores     Wall Time (ms)      Speedup        Efficiency     
+------------------------------------------------------------
+1         665.609             1.000          1.000          
+2         330.158             2.016          1.008          
+12        89.693              7.421          0.618          
+
+===== SCALING ANALYSIS =====
+Memory Kernel Maximum Speedup: 2.485x
+Memory Kernel Efficiency: 0.207
+
+Compute Kernel Maximum Speedup: 7.421x
+Compute Kernel Efficiency: 0.618
+
+===== MEMORY BANDWIDTH ANALYSIS =====
+Kernel A (Memory-Bound) shows lower scaling efficiency.
+Conclusion: Kernel A is the likely candidate for memory bandwidth saturation.
+Kernel B scales better because it performs more CPU computations per memory access.
+
+===== VALIDATION =====
+Memory Kernel: PASSED
+Compute Kernel: PASSED
