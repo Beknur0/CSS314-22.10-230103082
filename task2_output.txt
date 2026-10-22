@@ -1,0 +1,20 @@
+Student ID: 230103082
+OS: Windows 11
+CPU: Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+Logical CPU Cores: 12
+
+Array Size: 20,000,000
+Data Type: float64
+Parallel Fraction: 0.95
+
+===== BENCHMARK RESULTS =====
+Cores     Wall Time (ms)      Speedup        Amdahl Upper Bound  
+-----------------------------------------------------------------
+1         4872.911            1.000          1.000               
+2         3396.974            1.434          1.905               
+4         2867.913            1.699          3.478               
+12        3342.688            1.458          7.742               
+24        6884.769            0.708          11.163              
+
+===== FINAL RESULT =====
+Array Sum: 10001005.227162
