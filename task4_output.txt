@@ -1,0 +1,23 @@
+Student ID: 230103082
+OS: Windows 11
+CPU: Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+Logical CPU Cores: 12
+
+Total Items: 1000
+Workers: 4
+Dynamic Chunk Size: 5
+
+Workload:
+sleep(0.0001 * (i % 20))
+
+===== BENCHMARK RESULTS =====
+Strategy                 Wall Time (ms)      Completion Delta (ms)    
+----------------------------------------------------------------------
+Static Scheduling        335.186             12.949                   
+Dynamic Scheduling       326.529             7.484                    
+
+===== PERFORMANCE COMPARISON =====
+Dynamic Speedup: 1.027x
+Static Completion Delta: 12.949 ms
+Dynamic Completion Delta: 7.484 ms
+Faster Strategy: Dynamic Scheduling
