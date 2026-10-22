@@ -1,0 +1,25 @@
+Student ID: 230103082
+OS: Windows 11
+CPU: Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+Logical CPU Cores: 12
+
+Threads: 4
+Increments per Thread: 2,000,000
+Expected Final Value: 8,000,000
+
+===== RACE CONDITION RESULTS =====
+Expected Value: 8,000,000
+Actual Unsafe Value: 8,000,000
+Lost Updates: 0
+Lost Updates Percentage: 0.000%
+
+===== SYNCHRONIZATION RESULTS =====
+Safe Final Value: 8,000,000
+Unsafe Wall Time: 2.124 ms
+Safe Wall Time: 3873.409 ms
+Lock Penalty: 3871.285 ms
+Synchronization Slowdown: 1823.639x
+
+===== VALIDATION =====
+Safe Counter Validation: PASSED
+Race Condition Detected: NO
