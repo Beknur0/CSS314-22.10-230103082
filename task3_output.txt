@@ -1,0 +1,24 @@
+Student ID: 230103082
+OS: Windows 11
+CPU: Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+Physical CPU Cores: 6
+Logical CPU Cores: 12
+
+Threads: 6
+Iterations per Thread: 50,000,000
+Cache Line Size: 64 bytes
+
+===== BENCHMARK RESULTS =====
+Method                   Wall Time (ms)      
+---------------------------------------------
+Unpadded Shared          4.661               
+Padded/Local             3.711               
+
+===== EXECUTION RATIO =====
+Unpadded / Local: 1.256x
+
+===== VALIDATION =====
+Expected Result: 300,000,000
+Unpadded Result: 300,000,000
+Local Result: 300,000,000
+Validation: PASSED
