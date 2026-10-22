@@ -1,0 +1,15 @@
+Student ID: 230103082
+OS: Windows 11
+Platform: Windows-11-10.0.26200-SP0
+CPU Model: Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+Logical CPU Cores: 12
+
+Array Size: 20,000,000
+Data Type: float64
+Execution Mode: Single-threaded (Serial)
+
+===== RESULTS =====
+Sum: 10001005.227161
+Mean: 0.500050
+Standard Deviation: 0.288720
+Execution Time: 8672.296 ms
