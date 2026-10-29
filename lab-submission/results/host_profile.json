@@ -1,0 +1,15 @@
+{
+    "cpu_model": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
+    "microarchitecture": "Tiger Lake",
+    "base_frequency_ghz": 2.7,
+    "physical_cores": 6,
+    "logical_cores": 12,
+    "hyper_threading": true,
+    "l1_data_cache_kb_per_core": 48,
+    "l2_cache_kb_reported_by_windows": 7680,
+    "l3_cache_kb": 12288,
+    "cache_line_bytes": 64,
+    "os": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.14.5",
+    "python_implementation": "CPython"
+}
